@@ -31,7 +31,8 @@ import {
   Settings,
   BarChart3,
   FileText,
-  Rocket
+  Rocket,
+  Thermometer
 } from "lucide-react";
 import heroImage from "@/assets/hero-consulting.jpg";
 
@@ -307,6 +308,100 @@ const Index = () => {
                   <span>567 membros</span>
                   <span>123 discussões</span>
                 </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Áreas Técnicas Atendidas */}
+      <section className="py-20 bg-primary">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary-foreground">
+              ÁREAS TÉCNICAS ATENDIDAS
+            </h2>
+            <p className="text-xl text-primary-foreground/80 max-w-3xl mx-auto">
+              Veja as áreas de suporte e troca de conhecimento oferecidas pela nossa comunidade técnica.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Card className="bg-primary-foreground text-primary border-none shadow-elegant hover:shadow-glow transition-all duration-300 hover:-translate-y-2">
+              <CardContent className="p-8 text-center">
+                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Thermometer className="text-primary-foreground" size={40} />
+                </div>
+                <h3 className="text-xl font-bold mb-4 uppercase tracking-wide">REFRIGERAÇÃO E CLIMATIZAÇÃO</h3>
+                <div className="w-12 h-1 bg-primary mx-auto mb-4"></div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Instalação, manutenção e diagnóstico de sistemas de refrigeração. Suporte técnico sobre gases, pressão, componentes e eficiência.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-primary-foreground text-primary border-none shadow-elegant hover:shadow-glow transition-all duration-300 hover:-translate-y-2">
+              <CardContent className="p-8 text-center">
+                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Settings className="text-primary-foreground" size={40} />
+                </div>
+                <h3 className="text-xl font-bold mb-4 uppercase tracking-wide">AUTOMAÇÃO INDUSTRIAL</h3>
+                <div className="w-12 h-1 bg-primary mx-auto mb-4"></div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Suporte em CLPs, sensores, IHMs e redes industriais. Compartilhe e resolva dúvidas sobre programação, controle e automação de processos.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-primary-foreground text-primary border-none shadow-elegant hover:shadow-glow transition-all duration-300 hover:-translate-y-2">
+              <CardContent className="p-8 text-center">
+                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Wrench className="text-primary-foreground" size={40} />
+                </div>
+                <h3 className="text-xl font-bold mb-4 uppercase tracking-wide">MECÂNICA INDUSTRIAL</h3>
+                <div className="w-12 h-1 bg-primary mx-auto mb-4"></div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Apoio técnico em montagem, manutenção e ajustes de máquinas e equipamentos industriais. Troca de experiências sobre sistemas mecânicos e hidráulicos.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-primary-foreground text-primary border-none shadow-elegant hover:shadow-glow transition-all duration-300 hover:-translate-y-2">
+              <CardContent className="p-8 text-center">
+                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                  <BarChart3 className="text-primary-foreground" size={40} />
+                </div>
+                <h3 className="text-xl font-bold mb-4 uppercase tracking-wide">ELÉTRICA PREDIAL E INDUSTRIAL</h3>
+                <div className="w-12 h-1 bg-primary mx-auto mb-4"></div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Discussões técnicas sobre instalações, comandos elétricos, painéis, normas e segurança. Soluções práticas para falhas e projetos elétricos.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-primary-foreground text-primary border-none shadow-elegant hover:shadow-glow transition-all duration-300 hover:-translate-y-2">
+              <CardContent className="p-8 text-center">
+                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Cpu className="text-primary-foreground" size={40} />
+                </div>
+                <h3 className="text-xl font-bold mb-4 uppercase tracking-wide">TÉCNICO EM ELETRÔNICA</h3>
+                <div className="w-12 h-1 bg-primary mx-auto mb-4"></div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Transformamos circuitos em soluções! Instalação, manutenção e inovação com precisão e eficiência.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-primary-foreground text-primary border-none shadow-elegant hover:shadow-glow transition-all duration-300 hover:-translate-y-2">
+              <CardContent className="p-8 text-center">
+                <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-dashed border-primary">
+                  <Lightbulb className="text-primary" size={40} />
+                </div>
+                <h3 className="text-xl font-bold mb-4 uppercase tracking-wide">NOVA ESPECIALIDADE</h3>
+                <div className="w-12 h-1 bg-primary mx-auto mb-4"></div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Espaço reservado para futuras especialidades técnicas que serão adicionadas conforme a demanda da comunidade.
+                </p>
               </CardContent>
             </Card>
           </div>
