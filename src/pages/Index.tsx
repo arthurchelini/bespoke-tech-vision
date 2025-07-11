@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { LoginSheet } from "@/components/LoginSheet";
 import { 
   ArrowRight, 
   CheckCircle, 
@@ -50,9 +51,7 @@ const Index = () => {
             <a href="#forum" className="text-foreground hover:text-primary transition-colors">Fórum</a>
             <a href="#contato" className="text-foreground hover:text-primary transition-colors">Contato</a>
           </div>
-          <Button variant="cta" size="sm">
-            Entrar no Fórum
-          </Button>
+          <LoginSheet />
         </div>
       </nav>
 
