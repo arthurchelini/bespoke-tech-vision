@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { LoginSheet } from "@/components/LoginSheet";
+import { ConversationsWidget } from "@/components/ConversationsWidget";
 import { 
   ArrowRight, 
   CheckCircle, 
@@ -671,6 +672,9 @@ const Index = () => {
           </div>
         </div>
       </footer>
+
+      {/* Widget de Conversas */}
+      <ConversationsWidget />
     </div>
   );
 };
